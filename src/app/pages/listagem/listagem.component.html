@@ -1,0 +1,10 @@
+<div class="listagem-container">
+  <h2>Listagem de Médicos</h2>
+  <ul>
+    <li *ngFor="let medico of medicos">
+      <a [routerLink]="['/detalhes', medico.id]">
+        {{ medico.nome }} - {{ medico.especialidade }}
+      </a>
+    </li>
+  </ul>
+</div>
